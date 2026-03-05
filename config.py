@@ -1,7 +1,7 @@
 import os
 from dotenv import load_dotenv
 
-load_dotenv()
+load_dotenv('sample.env')
 
 def get_env_variable(name: str, required: bool = True, cast_func=None):
     value = os.getenv(name)
